@@ -1,7 +1,29 @@
 \documentclass[11pt,a4j]{jarticle}
 
 \usepackage[dvipdfmx]{graphicx}
-\usepackage{listings}
+
+% ソースコード貼り付け用のプリアンブル
+\usepackage{listings, jlisting}
+\lstset{%
+  language={},
+  basicstyle={\small},%
+  identifierstyle={\small},%
+  commentstyle={\small\itshape},%
+  keywordstyle={\small\bfseries},%
+  ndkeywordstyle={\small},%
+  stringstyle={\small\ttfamily},
+  frame={tb},
+  breaklines=true,
+  columns=[l]{fullflexible},%
+  numbers=left,%
+  xrightmargin=0zw,%
+  xleftmargin=3zw,%
+  numberstyle={\scriptsize},%
+  stepnumber=1,
+  numbersep=1zw,%
+  lineskip=-0.5ex%
+}
+\renewcommand{\lstlistingname}{プログラム}
 
 \title{タイトル}
 \author{所属 \\ 学籍番号　名前}
@@ -11,6 +33,10 @@
 
 \maketitle
 
+% ソースコード貼り付け用
+\begin{lstlisting}[caption=caption,label=label,basicstyle=\ttfamily\footnotesize, frame=single]
+
+\end{lstlisting}
 
 
 \end{document}
