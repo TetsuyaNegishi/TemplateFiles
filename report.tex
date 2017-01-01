@@ -1,6 +1,6 @@
 \documentclass[11pt,a4j]{jarticle}
 
-\usepackage[dvipdfmx]{graphicx}
+\usepackage[dvipdfmx]{graphicx, hyperref}
 
 % ソースコード貼り付け用のプリアンブル
 \usepackage{listings, jlisting}
@@ -30,10 +30,6 @@
 
 \maketitle
 
-% ソースコード貼り付け用
-\begin{lstlisting}[caption=caption,label=label,basicstyle=\ttfamily\footnotesize, frame=single]
-
-\end{lstlisting}
-
+\input{sample.tex}
 
 \end{document}

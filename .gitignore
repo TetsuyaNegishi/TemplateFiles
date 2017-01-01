@@ -1,1 +1,8 @@
 *~
+README.tex
+*.aux
+*.dvi
+*.log
+*.out
+*.pdf
+sample.tex
