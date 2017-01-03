@@ -6,3 +6,5 @@ README.tex
 *.out
 *.pdf
 sample.tex
+yarn.lock
+node_modules/
