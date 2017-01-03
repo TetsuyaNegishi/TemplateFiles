@@ -3,7 +3,7 @@
 for fileName in `\find . -maxdepth 1 -name '*.md'`; do
     texName="${fileName%.*}.tex"
     pandoc $fileName -o $texName --listings
-    node removeTightlist.js $texName
+    node fixTexFile.js $texName
 done
 
 platex report.tex
