@@ -52,5 +52,5 @@ sample.mdにmarkdown形式でレポートを記述する。
 
 reportc.shを実行するとコンパイルされ、report.pdfが生成される。
 
-## Refference
+## Reference
 [http://www.yukisako.xyz/entry/2015/12/12/180830](http://www.yukisako.xyz/entry/2015/12/12/180830)
