@@ -8,7 +8,9 @@
   },
   "author": "TetsuyaNegishi",
   "license": "MIT",
-  "devDependencies": {
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "chokidar": "^1.6.1",
     "textlint": "^7.2.1",
     "textlint-rule-preset-jtf-style": "^2.2.3"
   }

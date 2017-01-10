@@ -1,4 +1,5 @@
 const chokidar = require('chokidar');
+
 const watcher = chokidar.watch('*.md', {
   ignored: 'README.md',
   persistent: true,
@@ -7,6 +8,8 @@ const watcher = chokidar.watch('*.md', {
 const execSync = require('child_process').execSync;
 
 watcher.on('all', (event, path) => {
-  const result = execSync(`bash mdToTex.sh ${path}`).toString();
-  console.log(result);
+  const resultMdToTex = execSync(`bash mdToTex.sh ${path}`).toString();
+  console.log(resultMdToTex);
+  const resultReportc = execSync('bash reportc.sh').toString();
+  console.log(resultReportc);
 });
