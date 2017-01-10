@@ -9,8 +9,9 @@ str = str.replace(/。/g, '．');
 
 const data = str;
 fs.writeFile(inputFilePath, data, (err) => {
-  if (err)
+  if (err) {
     console.log(err);
-  else
-    console.log("\\tightlistを削除しました")
+  } else {
+    console.log('\\tightlistを削除しました');
+  }
 });
