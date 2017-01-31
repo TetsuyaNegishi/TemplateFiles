@@ -20,6 +20,6 @@
     "eslint-plugin-import": "^2.2.0"
   },
   "scripts": {
-    "watch": "node watchMarkdownFile.js"
+    "watch": "node bin/watchMarkdownFile.js"
   }
 }
