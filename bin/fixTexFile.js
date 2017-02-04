@@ -6,6 +6,7 @@ let str = buf.toString();
 str = str.replace(/\\tightlist/g, '');
 str = str.replace(/、/g, '，');
 str = str.replace(/。/g, '．');
+str = str.replace(/\\begin{figure}/g, '\\begin{figure}[htbp]');
 
 const data = str;
 fs.writeFile(inputFilePath, data, (err) => {
